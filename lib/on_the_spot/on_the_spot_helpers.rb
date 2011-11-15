@@ -56,6 +56,9 @@ module OnTheSpot
         html_options[:'data-rows']      = options[:rows]
         html_options[:'data-columns']   = options[:columns]
       end
+      if options[:'text_data']
+        html_options[:'data'] = options[:'text_data']
+      end
       html_options[:'data-ok']          = options[:ok_text]
       html_options[:'data-cancel']      = options[:cancel_text]
       html_options[:'data-tooltip']     = options[:tooltip]
